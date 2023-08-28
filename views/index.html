@@ -1,0 +1,37 @@
+<!-- views/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head section) ... -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="/">InterviewHub</a></h1>
+            </div>
+            <!-- ... (nav links) ... -->
+        </nav>
+    </header>
+
+    <section class="interview-list">
+        <h2>Latest Interview Experiences</h2>
+        <ul class="experience-list">
+            <!-- Loop through experiences from controller -->
+            <% for (const experience of experiences) { %>
+            <li>
+                <h3><%= experience.role %> at <%= experience.company %></h3>
+                <p>Date: <%= experience.date %></p>
+                <p>Rounds: <%= experience.rounds %></p>
+                <p>Difficulty: <%= experience.difficulty %></p>
+                <a href="#">Read More</a>
+            </li>
+            <% } %>
+        </ul>
+    </section>
+
+    <!-- ... (rest of the body) ... -->
+
+</body>
+</html>

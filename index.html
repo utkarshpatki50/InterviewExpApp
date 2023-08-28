@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Experience Website</title>
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1><a href="/">InterviewHub</a></h1>
+          <!-- Link to the homepage -->
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Submit Experience</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="interview-submission">
+      <h2>Share Your Interview Experience</h2>
+      <form action="#" method="POST">
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required />
+
+        <!-- Add styling for other form fields -->
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="interview-list">
+      <h2>Latest Interview Experiences</h2>
+      <ul class="experience-list">
+        <li>
+          <h3>Software Engineer at XYZ Inc.</h3>
+          <p>Date: August 15, 2023</p>
+          <p>Rounds: Technical Interview, HR Interview</p>
+          <p>Difficulty: Medium</p>
+          <a href="#">Read More</a>
+        </li>
+        <!-- Repeat similar <li> elements for more experiences -->
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 InterviewHub. All rights reserved.</p>
+    </footer>
+
+    <script src="public/js/script.js"></script>
+  </body>
+</html>
